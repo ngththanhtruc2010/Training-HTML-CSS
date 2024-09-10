@@ -1,0 +1,262 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*page*/
+.page {
+    margin: 0px auto;
+    /* width: 768px; */
+}
+
+.page .header {
+    height: 45px;
+}
+
+/*multi-column*/
+.multi-column {
+    display: flex;
+    flex-grow: row;
+    justify-content: flex-start;
+}
+
+.multi-column .left {
+    width: 50%;
+    display: flex;
+    flex-grow: row;
+    justify-content: flex-start;
+}
+
+.multi-column .right {
+    width: 50%;
+    display: flex;
+    flex-grow: row;
+    justify-content: flex-end;
+}
+
+/*end of multi-column*/
+
+/*col*/
+.col-1 {
+    witdh: calc(100%/8);
+}
+
+.col-2 {
+    witdh: calc(100%*2/8);
+}
+
+.col-3 {
+    witdh: calc(100%*3/8);
+}
+
+.col-4 {
+    witdh: calc(100%*4/8);
+}
+
+.col-5 {
+    witdh: calc(100%*5/8);
+}
+
+.col-6 {
+    witdh: calc(100%*6/8);
+}
+
+.col-7 {
+    witdh: calc(100%*7/8);
+}
+
+.col-8 {
+    witdh: calc(100%);
+}
+
+/*end of col*/
+
+/*brand*/
+.brand {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.brand>.icon {
+    height: 300px;
+    width: 600px;
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+}
+
+.brand>.name {
+    margin-left: 40px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(209, 69, 111);
+    display: inline;
+    padding-left: 20px;
+}
+
+/*end of branch*/
+
+/*main-nav*/
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.main-nav>.item {
+    list-style: none;
+    padding: 10px;
+}
+
+.main-nav .item .text {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(218, 90, 164);
+}
+
+.main-nav>.item .text:hover {
+    text-decoration: underline;
+}
+
+.main-nav .item.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(69, 120, 216);
+}
+
+/*end of main-nav*/
+
+/*promotions*/
+.promotions {
+
+    width: 100%;
+    height: 365px;
+    position: relative;
+    background-image: url(../images/bakery.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.promotions .previous {
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 65px;
+    width: 32px;
+    height: 64px;
+}
+
+.promotions .previous .icon-previous {
+    display: table;
+}
+
+.promotions .previous .icon-previous::before {
+    content: '\003C';
+    color: white;
+    padding-top: 15px;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+
+.promotions .item {
+    background-image: url('../images/ケーキ.png');
+}
+
+.promotions .next {
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% - 16px);
+    right: 65px;
+    width: 32px;
+    height: 64px;
+}
+
+.promotions .next .icon-next {
+    display: table;
+}
+
+.promotions .next .icon-next::before {
+    content: '\003E';
+    color: white;
+    padding-top: 15px;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+
+.promotions>.item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.promotions .item .photo {
+    margin-left: 135px;
+    margin-top: 22px;
+    max-width: 270px;
+    max-height: 320px;
+}
+
+.promotions .item .summary {
+    flex: 1;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.promotions .item .summary .title {
+    color: rgb(209, 69, 111);
+    font-size: 20px;
+    font-weight: 5px;
+}
+
+.promotions .item .summary .desc {
+    margin: 10px 0px;
+    color: rgb(226, 113, 147);
+    font-size: 12px;
+}
+
+.middle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.button-signupnow {
+    background-color: #4F94F1;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    gap: 10px
+}
+
+.promotions .item .summary .button-signupnow .icon-check {
+    width: 19px;
+    height: 18px;
+    display: inline-flex;
+}
+
+.promotions < .item < .summary < .button-signupnow < .text {
+    padding-left: 8px;
+}
+
+/*end of promotions*/
+
+.page .footer {
+    height: 100px;
+    bottom: 0px;
+}
+
+/*end of page*/
