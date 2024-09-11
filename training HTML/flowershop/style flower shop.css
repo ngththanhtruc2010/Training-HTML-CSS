@@ -21,6 +21,25 @@ html {
     overflow-x: hidden;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+.home .content .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.home .content .btn:hover {
+    background: var(--pink-al);
+}
+
 header {
     position: fixed;
     top: 0;
@@ -78,6 +97,44 @@ header .fa-bars {
     border: .1rem solid rgba(0, 0, 0, .3);
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../flowershop/flower-home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: var(--pink-al);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content a {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
 
 
 
@@ -106,9 +163,17 @@ header .fa-bars {
     header {
         padding: 2rem;
     }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
+    }
 }
 
-@media (max-width:991px) {
+@media (max-width:786px) {
     header .fa-bars {
         display: block;
     }
@@ -120,6 +185,11 @@ header .fa-bars {
         right: 0;
         background: #eee;
         border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     header .navbar a {
@@ -128,6 +198,14 @@ header .fa-bars {
         background: #fff;
         border-top: .1rem solid rgba(0, 0, 0, .1);
         display: block;
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 3.5rem;
     }
 }
 
