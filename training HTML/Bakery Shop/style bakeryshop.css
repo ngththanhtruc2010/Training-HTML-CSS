@@ -137,7 +137,7 @@ body {
     width: 100%;
     height: 365px;
     position: relative;
-    background-image: url(../images/bakery.jpg);
+    background-image: url(c:\Users\COMPANY-PC\Downloads\bakery.jpg);
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
@@ -165,7 +165,7 @@ body {
 }
 
 .promotions .item {
-    background-image: url('../images/ケーキ.png');
+    background-image: url('/Resources/images/bakery.jpg');
 }
 
 .promotions .next {
@@ -248,7 +248,7 @@ body {
     display: inline-flex;
 }
 
-.promotions < .item < .summary < .button-signupnow < .text {
+.promotions .item .summary .button-signupnow .text {
     padding-left: 8px;
 }
 
