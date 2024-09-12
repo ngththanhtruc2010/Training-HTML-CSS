@@ -252,6 +252,72 @@ header .fa-bars {
     font-size: 1.5rem;
 }
 
+.products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.products .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.products .box-container .box .discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink-al);
+    background: rgba(243, 180, 228, 0.1);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .img {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.products .box-container .box .img img {
+    height: 25rem;
+}
+
+.products .box-container .box:hover .img img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
