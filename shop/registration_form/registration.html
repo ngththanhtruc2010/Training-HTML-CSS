@@ -1,0 +1,109 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1-0">
+    <title>Complete Responsive Registration Form Validation</title>
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="/shop/registration_form/style.css">
+    <!--font awsome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="form-row">
+            <!--col left-->
+            <div class="form-col-left">
+                <h2>Register Now!</h2>
+                <form class="register-form">
+                    <div class="form-item-list">
+
+                        <!--item-->
+                        <div class="form-item">
+                            <label for="firstname">First Name</label>
+                            <div class="form-group">
+                                <span><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" id="firstname"
+                                    placeholder="Please enter your first name.">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="lastname">Last Name</label>
+                            <div class="form-group">
+                                <span><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" id="lastname"
+                                    placeholder="Please entern your last name.">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="email">Email Address</label>
+                            <div class="form-group">
+                                <span><i class="fas fa-envelop"></i></span>
+                                <input type="text" class="form-control" id="email" placeholder="sample@mail.com">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="phonenumber">Phone</label>
+                            <div class="form-group">
+                                <span><i class="fas fa-phone-alt"></i></span>
+                                <input type="text" class="form-control" id="phonenumber" placeholder="XXX-XXX-XXXX">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="password">Password</label>
+                            <div class="form-group">
+                                <span><i class="fas fa-lock"></i></span>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Please enter your password">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="confirm-password">Re-Password</label>
+                            <div class="form-group">
+                                <span><i class="fas fa-lock"></i></span>
+                                <input type="confirm-password" class="form-control" id="password"
+                                    placeholder="Please re-enter your password">
+                            </div>
+                        </div>
+
+                        <!--end item-->
+
+                        <span class="submission-status">
+                            <!--text-here-->
+                        </span>
+
+                        <button type="submit" id="submit-btn">Register now
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!--end col left-->
+
+                <!--col right-->
+
+                <div class="form-col-right">
+                    <h2>Already Registered ?</h2>
+                    <p class="text">If you already have an account with us, please log in to access your profile and
+                        enjoy our services. If you’ve forgotten your password, you can easily reset it using the “Forgot
+                        Password?”.<br> Do not have an account yet? Fill out the registration form to get started!</p>
+                    <button type="button" id="login-btn">Login
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
