@@ -317,7 +317,6 @@ p {
     display: none;
 }
 
-/* Hiển thị khi có thông báo lỗi */
 .error-message.show {
     display: block;
 }
