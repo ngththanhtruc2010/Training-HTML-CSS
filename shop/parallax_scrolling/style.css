@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #378CE7, #F7B5CA);
+    /* min-height: 100vh; */
+    overflow-x: hidden;
+    background: linear-gradient(to left, #402E7A, #F7B5CA);
 }
 
 header {
@@ -33,6 +35,17 @@ header .logo {
     letter-spacing: 2px;
 }
 
+header .icon a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+header .icon a:hover {
+    color: #402E7A;
+}
+
 header ul {
     display: flex;
     justify-content: center;
@@ -54,8 +67,10 @@ header ul li a {
 header ul li a:hover,
 header ul li a.active {
     background: #fff;
-    color: #378CE7;
+    color: #402E7A;
 }
+
+
 
 section {
     position: relative;
@@ -74,8 +89,9 @@ section::before {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #F7B5CA, #f5d3d3, transparent);
+    background: linear-gradient(to top, #F7B5CA, rgb(245, 215, 215), transparent);
     z-index: 6;
+    scroll-behavior: smooth;
 }
 
 section img {
@@ -90,13 +106,15 @@ section img {
 
 }
 
-/* #moon {
+#moon {
     mix-blend-mode: screen;
-    width: 10%;
-    height: 20%;
+    width: 100%;
+    height: 80%;
     align-items: center;
     z-index: 2;
-} */
+    transform: translateY(5px);
+
+}
 
 #mountain-front {
     z-index: 4;
@@ -111,11 +129,12 @@ section img {
 
 #text {
     position: absolute;
+    right: -350px;
     color: #fff;
     white-space: nowrap;
     font-size: 5em;
     z-index: 3;
-    text-shadow: 2px 2px 4px #378CE7;
+    text-shadow: 2px 2px 4px #402E7A;
 }
 
 #btn {
@@ -124,7 +143,7 @@ section img {
     padding: 8px 30px;
     border-radius: 40px;
     background: #fff;
-    color: #378CE7;
+    color: #402E7A;
     font-size: 1.5em;
     z-index: 3;
     transform: translateY(100px);
@@ -145,4 +164,111 @@ section img {
 .sec p {
     font-size: 1em;
     color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    header .logo {
+        display: flex;
+        transform: translateY(40px);
+        font-size: 10em;
+    }
+
+    header .icon {
+        background-position: center;
+        display: flex;
+    }
+
+    .sec {
+        position: relative;
+        padding: 20px;
+        background: linear-gradient(to top, #378CE7, #F7B5CA);
+    }
+
+    .sec h2 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .sec p {
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    #btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 30px;
+        border-radius: 40px;
+        background: #fff;
+        color: #F7B5CA;
+        font-size: 2em;
+        z-index: 3;
+        font-weight: 600;
+        transform: translateY(100px);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        justify-content: center;
+        padding: 2px;
+        display: flex;
+    }
+
+    header .logo {
+        display: grid;
+        font-size: 3em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header ul {
+        display: none;
+        justify-content: center;
+    }
+
+    header ul li {
+        margin: 0 15px;
+    }
+
+    header .icon a {
+        background-position: center;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .icon a {
+        display: none;
+        color: #fff
+    }
+
+    section img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        z-index: 1;
+        pointer-events: none;
+
+    }
+
+    #moon {
+        mix-blend-mode: screen;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        z-index: 2;
+        transform: translateX(5px);
+
+    }
 }
