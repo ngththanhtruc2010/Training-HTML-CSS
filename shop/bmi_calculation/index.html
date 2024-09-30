@@ -15,13 +15,13 @@
 
 <body>
     <div class="wrapper">
-        <p>Height in centimet:
+        <p>Height in cm:
             <input type="text" id="height">
             <br>
             <span id="height-error"></span></input>
         </p>
 
-        <p>Weight in kilogram:
+        <p>Weight in kg:
             <input type="text" id="weight">
             <br>
             <span id="weight-error"></span></input>
@@ -43,14 +43,14 @@
             let height_status = false, weight_status = false;
 
             if (isNaN(height) || (height <= 0)) {
-                document.getElementById('height-error').innerHTML = 'Please provide a valid height';
+                document.getElementById('height-error').innerHTML = 'Invalid height.';
             } else {
                 document.getElementById('height-error').innerHTML = '';
                 height_status = true;
             }
 
             if (isNaN(weight) || (weight <= 0)) {
-                document.getElementById('weight-error').innerHTML = 'Please provide a valid weight';
+                document.getElementById('weight-error').innerHTML = 'Invalid weight.';
             } else {
                 document.getElementById('weight-error').innerHTML = '';
                 weight_status = true;
